@@ -2,7 +2,7 @@
 Experimental Duo two-factor auth provider for Nextcloud
 
 ## Configuration
-Place files & sub-directories for this project into directory named *twofactor_duo* in the *apps* folder of your NextCloud installation *(i.e. /var/www/html/apps)*
+Place files & sub-directories for this project into directory named *twofactor_duo* in the *apps* folder of your NextCloud installation *(i.e. `/var/www/html/apps`)*
 
 Login to the Duo admin console and add a Web SDK application for the NextCloud logins. Make note of the Integration Key (IKEY), the Secret Key (SKEY), and the API Hostname (HOST).
 
@@ -55,7 +55,7 @@ index fd4811d3ff..ed4c4f45d4 100644
  
 ```
 ## Notes
-If there are any issues, check */var/log/httpd/error_log* to see what errors are being thrown
+If there are any issues, check `/var/log/httpd/error_log` to see what errors are being thrown
 
 If used with LDAP/Active Directory auth, you will need to change LDAP auth to use actual username not UUID.  Do this by going into LDAP integration settings, in the *Expert* section set the *Internal Username Attribute* to *sAMAccountName*
 
