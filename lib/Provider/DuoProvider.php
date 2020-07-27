@@ -47,7 +47,7 @@ class DuoProvider implements IProvider, IProvidesCustomCSP {
 	 *
 	 * @return string
 	 */
-	public function getId() {
+	public function getId(): string {
 		return 'duo';
 	}
 
@@ -56,7 +56,7 @@ class DuoProvider implements IProvider, IProvidesCustomCSP {
 	 *
 	 * @return string
 	 */
-	public function getDisplayName() {
+	public function getDisplayName(): string {
 		return 'Duo';
 	}
 
@@ -65,7 +65,7 @@ class DuoProvider implements IProvider, IProvidesCustomCSP {
 	 *
 	 * @return string
 	 */
-	public function getDescription() {
+	public function getDescription(): string {
 		return 'Duo';
 	}
 
@@ -88,7 +88,7 @@ class DuoProvider implements IProvider, IProvidesCustomCSP {
 	 * @param IUser $user
 	 * @return Template
 	 */
-	public function getTemplate(IUser $user) {
+	public function getTemplate(IUser $user): Template {
 		$config = $this->getConfig();
 		$tmpl = new Template('twofactor_duo', 'challenge');
 		$tmpl->assign('user', $user->getUID());
@@ -105,7 +105,7 @@ class DuoProvider implements IProvider, IProvidesCustomCSP {
 	 * @param IUser $user
 	 * @param string $challenge
 	 */
-	public function verifyChallenge(IUser $user, $challenge) {
+	public function verifyChallenge(IUser $user, $challenge): bool {
 		$config = $this->getConfig();
 
 		$IKEY = $config['IKEY'];
@@ -125,7 +125,7 @@ class DuoProvider implements IProvider, IProvidesCustomCSP {
 	 * @param IUser $user
 	 * @return boolean
 	 */
-	public function isTwoFactorAuthEnabledForUser(IUser $user) {
+	public function isTwoFactorAuthEnabledForUser(IUser $user): bool {
 		return true;
 	}
 
