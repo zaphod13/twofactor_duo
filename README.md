@@ -48,15 +48,15 @@ index fd4811d3ff..ed4c4f45d4 100644
  	}
  
  	/**
-@@ -173,8 +179,8 @@ class TwoFactorChallengeController extends Controller {
- 
- 		$this->session->set('two_factor_auth_error', true);
- 		return new RedirectResponse($this->urlGenerator->linkToRoute('core.TwoFactorChallenge.showChallenge', [
--			'challengeProviderId' => $provider->getId(),
--			'redirect_url' => $redirect_url,
-+				'challengeProviderId' => $provider->getId(),
-+				'redirect_url' => $redirect_url,
- 		]));
- 	}
  
 ```
+## Notes
+If there are any issues, check /var/log/httpd/error_log to see what errors are being thrown
+
+If used with LDAP auth, need to change LDAP auth to use actual username not UUID.  Do this by going into LDAP integration settings, in Expert section set the Internal Username Attribute to sAMAccountName
+
+
+
+
+
+
