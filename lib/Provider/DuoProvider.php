@@ -74,7 +74,7 @@ class DuoProvider implements IProvider, IProvidesCustomCSP {
 	 *
 	 * @return ContentSecurityPolicy
 	 */
-	public function getCSP() {
+	public function getCSP(): ContentSecurityPolicy {
 		$csp = new ContentSecurityPolicy();
 		$csp->addAllowedChildSrcDomain('https://*.duosecurity.com');
 		$csp->addAllowedStyleDomain('https://*.duosecurity.com');
