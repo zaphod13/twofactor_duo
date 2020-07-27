@@ -5,3 +5,8 @@
     height: 330px;
     background: transparent;
 }
+
+.body-login-container.two-factor {
+    max-width: 330px;
+    margin: 15px auto 0;
+}
