@@ -15,7 +15,6 @@ index 9f379ad30d..9c22da8ae0 100644
  use OCP\AppFramework\Controller;
  use OCP\AppFramework\Http\RedirectResponse;
  use OCP\AppFramework\Http\TemplateResponse;
-+use OCP\Authentication\TwoFactorAuth\IProvidesCustomCSP;
  use OCP\Authentication\TwoFactorAuth\TwoFactorException;
  use OCP\IRequest;
  use OCP\ISession;
