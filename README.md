@@ -2,6 +2,8 @@
 Experimental Duo two-factor auth provider for Nextcloud
 
 ## Configuration
+Login to the Duo admin console and add a Web SDK application for the NextCloud logins. Make note of the Integration Key (IKEY), the Secret Key (SKEY), and the API Hostname (HOST).
+
 Add your duo configuration to your Nextcloud's `config/config.php` fils (for AKEY use IKEY value):
 ```
 'twofactor_duo' => [
