@@ -5,15 +5,15 @@
 	<name>Duo Two Factor Provider</name>
 	<summary>two-factor provider for Duo</summary>
 	<description>A Two-Factor-Auth Provider for Duo</description>
-	<version>0.0.1</version>
+	<version>0.0.2</version>
 	<licence>agpl</licence>
 	<author>Christoph Wurst</author>
 	<namespace>TwoFactorDuo</namespace>
 	<category>auth</category>
 
 	<dependencies>
-		<php min-version="5.6" max-version="7.1" />
-		<nextcloud min-version="13" max-version="13" />
+		<php min-version="5.6" max-version="7.4" />
+		<nextcloud min-version="19" max-version="19" />
 	</dependencies>
 	<two-factor-providers>
 		<provider>OCA\TwoFactorDuo\Provider\DuoProvider</provider>
