@@ -1,5 +1,5 @@
  core/Controller/TwoFactorChallengeController.php | 8 +++++++-
- 1 file changed, 7 insertions(+), 1 deletion(-)
+ 1 file changed, 6 insertions(+), 1 deletion(-)
 
 diff --git a/core/Controller/TwoFactorChallengeController.php b/core/Controller/TwoFactorChallengeController.php
 index 9f379ad30d..9c22da8ae0 100644
